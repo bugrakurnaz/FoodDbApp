@@ -21,6 +21,25 @@ public class CategoriesController(AppDbContext db) : ControllerBase
         return CreatedAtAction(nameof(GetAll), category);
     }
 
+    [HttpPut("{id:guid}")]
+    public async Task<IActionResult> Update(Guid id, Category updatedCategory)
+    {
+        if (id != updatedCategory.Id)
+        {
+            return BadRequest("ID mismatch between URL and body.");
+        }
+
+        var category = await db.Categories.FindAsync(id);
+        if (category is null)
+        {
+            return NotFound();
+        }
+        
+        category.Name = updatedCategory.Name;
+        await db.SaveChangesAsync();
+        return NoContent();
+    }
+
     [HttpDelete("{id:guid}")]
     public async Task<IActionResult> Delete(Guid id)
     {
