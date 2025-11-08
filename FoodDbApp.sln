@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbApp.Api", "DbApp.Api\DbApp.Api.csproj", "{66214D75-0C2B-4A32-90D5-CA0757E4CAC2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDbApp.Api", "FoodDbApp.Api\FoodDbApp.Api.csproj", "{66214D75-0C2B-4A32-90D5-CA0757E4CAC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbApp.Core", "DbApp.Core\DbApp.Core.csproj", "{BE523921-2347-48F3-A48E-EA6623297EAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDbApp.Core", "FoodDbApp.Core\FoodDbApp.Core.csproj", "{BE523921-2347-48F3-A48E-EA6623297EAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbApp.Persistence", "DbApp.Persistence\DbApp.Persistence.csproj", "{A18DB095-F20E-4B08-909A-F7EF82E37103}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDbApp.Persistence", "FoodDbApp.Persistence\FoodDbApp.Persistence.csproj", "{A18DB095-F20E-4B08-909A-F7EF82E37103}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbApp.Infrastructure", "DbApp.Infrastructure\DbApp.Infrastructure.csproj", "{170B31A2-B420-4D69-B0A6-CF6AAD297F29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDbApp.Infrastructure", "FoodDbApp.Infrastructure\FoodDbApp.Infrastructure.csproj", "{170B31A2-B420-4D69-B0A6-CF6AAD297F29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
