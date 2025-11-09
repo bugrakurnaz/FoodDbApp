@@ -12,6 +12,14 @@ public class CategoriesController(AppDbContext db) : ControllerBase
     [HttpGet]
     public async Task<IEnumerable<Category>> GetAll() => await db.Categories.ToListAsync();
 
+    [HttpGet("{id:guid}")]
+    public async Task<ActionResult<Category>> Get(Guid id)
+    {
+        var category = await db.Categories.FindAsync(id);
+        if (category is null) return NotFound();
+        return category;
+    }
+
     [HttpPost]
     public async Task<ActionResult<Category>> Create(Category category)
     {
